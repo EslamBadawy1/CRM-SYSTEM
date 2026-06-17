@@ -1,14 +1,15 @@
+import { Routes, Route } from "react-router-dom";
 
-import './App.css'
+import LandingPage from "./pages/LandingPage/LandingPage";
+import Login from "./pages/Login/Login";
 
 function App() {
-
-
   return (
-    <>
-      <h2>welcome to my app crm </h2>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

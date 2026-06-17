@@ -1,0 +1,52 @@
+.leadForm {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+.formCard {
+  background: white;
+
+  padding: 50px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.header {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.header h2 {
+  font-size: 42px;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.header p {
+  color: #6c757d;
+
+  margin-top: 10px;
+}
+
+.input {
+  height: 55px;
+}
+
+.textarea {
+  resize: none;
+}
+
+.submitBtn {
+  width: 100%;
+
+  height: 55px;
+
+  font-size: 18px;
+
+  border-radius: 12px;
+}

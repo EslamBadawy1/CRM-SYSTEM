@@ -1,0 +1,38 @@
+.statistics {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 15px;
+
+  background: #f5f8ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #2563eb;
+  font-size: 24px;
+}
+
+.statItem h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: #0f172a;
+}
+
+.statItem p {
+  margin: 0;
+  color: #64748b;
+}

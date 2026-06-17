@@ -1,0 +1,170 @@
+.page {
+  height: 100vh;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT */
+.left {
+  width: 40%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+}
+
+/* RIGHT SIDE */
+.right {
+  width: 60%;
+  background: #0c0d19;
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* LOGIN CARD */
+.card {
+  width: 400px;
+  height: 500px;
+  box-shadow: 0px 0px 9px 0px #c1c2c9;
+  padding: 19px 20px 20px 20px;
+  border-radius: 5px 5px;
+}
+
+/* BRAND */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.logo {
+  background: #0d6efd;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* TEXT */
+.title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.inputGroup input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.row a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+/* BUTTON */
+.button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* DIVIDER */
+.divider {
+  text-align: center;
+  font-size: 11px;
+  margin: 15px 0;
+  color: gray;
+}
+
+/* SOCIAL */
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.social button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* BADGE */
+.badge {
+  background: rgba(13, 110, 253, 0.15);
+  color: #0d6efd;
+  padding: 6px 12px;
+  width: fit-content;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.right h1 {
+  font-size: 34px;
+  margin: 0;
+}
+
+.right h1 span {
+  color: #0d6efd;
+}
+
+.right p {
+  color: white;
+  margin-top: 15px;
+  max-width: 500px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.infoCard {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 12px;
+  width: 200px;
+}
