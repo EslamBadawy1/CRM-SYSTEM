@@ -1,0 +1,25 @@
+.sidebar {
+  background-color: #0f172a;
+  color: #fff;
+  width: 260px;
+  height: calc(100vh - 80px) 100% ;
+}
+
+.navItem {
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #cbd5e1;
+  border-left: 3px solid transparent;
+}
+
+.navItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.active {
+  background: rgba(59, 130, 246, 0.15);
+  border-left: 3px solid #3b82f6;
+  color: #fff;
+}

@@ -1,0 +1,68 @@
+.nav {
+  height: 70px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* LOGO */
+.parentImg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+/* NOTIFICATION */
+.notificationSection {
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+  color: #374151;
+  transition: 0.2s;
+}
+
+.notificationSection:hover {
+  color: #0d6efd;
+}
+
+.countNoti {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  font-size: 10px;
+  padding: 2px 6px;
+}
+
+/* ADMIN NAME */
+.adminName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* AVATAR */
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}

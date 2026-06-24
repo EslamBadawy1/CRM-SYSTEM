@@ -1,0 +1,266 @@
+.wrapper {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.description {
+  margin-top: 5px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Add Button */
+
+.addBtn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background: #1d4ed8;
+}
+
+/* Search & Filter */
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Search */
+
+.searchWrapper {
+  position: relative;
+  flex: 1;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 12px 12px 42px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: #2563eb;
+}
+
+/* Filter */
+
+.filterBtn {
+  padding: 12px 18px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filterBtn:hover {
+  background: #f8fafc;
+}
+
+/* Table */
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background: #f8fafc;
+}
+
+.table th {
+  text-align: left;
+  padding: 14px;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.table td {
+  padding: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.table tr:hover {
+  background: #f8fafc;
+}
+
+/* Status */
+
+.statusBadge {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.active {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.inactive {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Actions */
+
+.actionCell {
+  position: relative;
+}
+
+.actionBtn {
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+  color: #475569;
+
+  transition: 0.3s;
+}
+
+.actionBtn:hover {
+  background: #f1f5f9;
+}
+
+.dropdown {
+  position: absolute;
+  right: 10px;
+  top: 45px;
+
+  width: 160px;
+
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  overflow: hidden;
+
+  z-index: 999;
+}
+
+.dropdownItem {
+  width: 100%;
+
+  padding: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+
+  color: #334155;
+
+  transition: 0.3s;
+}
+
+.dropdownItem:hover {
+  background: #f8fafc;
+}
+
+.dropdown button {
+  width: 100%;
+  border: none;
+  background: transparent;
+
+  padding: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.dropdown button:hover {
+  background: #f8fafc;
+}
+
+.deleteBtn {
+  color: #dc2626;
+}
+
+.deleteBtn:hover {
+  background: #fef2f2 !important;
+}
+
+/* Pagination */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.pagination button {
+  background: #2563eb;
+  color: white;
+
+  border: none;
+
+  padding: 8px 12px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background: #1d4ed8;
+}   

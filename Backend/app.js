@@ -1,34 +1,41 @@
+// Dotenv
 require("dotenv").config();
 
+//cros
+const cors = require("cors");
+
+// express
 const express = require("express");
-const morgan = require("morgan");
-
-const connectDB = require("./config/db");
-
 const app = express();
 
-// Connect Database
-connectDB();
+// http (for future socket use)
+const http = require("http");
+const server = http.createServer(app);
 
-// Middlewares
+// logger
+const morgan = require("morgan");
+
+// json middleware
 app.use(express.json());
+app.use(cors());
 
+// dev logger
 if (process.env.NODE_ENV === "dev") {
   app.use(morgan("dev"));
 }
 
-// Test Route
-app.get("/", (req, res) => {
-  res.status(200).json({
-    success: true,
-    message: "CRM API Running Successfully",
-  });
+// DB connection
+const connectedDB = require("./config/db");
+connectedDB();
+
+// routes
+const authRoutes = require("./routes/auth.route");
+const userRoutes = require("./routes/user.route");
+app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
+
+// server start
+const port = process.env.PORT || 3000;
+server.listen(port, () => {
+  console.log(`Server running on ${port}`);
 });
-
-// Start Server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server Running On Port ${PORT}`);
-});
-
-
